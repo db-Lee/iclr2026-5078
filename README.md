@@ -22,3 +22,10 @@
 - [dPRM-14B](https://huggingface.co/datasets/iclr2026-5078/d{RM-14B): dPRM with [14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B) backbone trained on the multi-domain training dataset ([train](https://huggingface.co/datasets/iclr2026-5078/train)).
 - [gORM-14B](https://huggingface.co/datasets/iclr2026-5078/gORM-14B): gORM with [14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B) backbone trained on the multi-domain training dataset ([train_orm](https://huggingface.co/datasets/iclr2026-5078/train_orm)).
 - [gPRM-14B](https://huggingface.co/datasets/iclr2026-5078/gPRM-14B): gPRM with [14B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B) backbone trained on the multi-domain training dataset ([train_prm](https://huggingface.co/datasets/iclr2026-5078/train_prm)).
+
+---
+
+### Code
+
+- `versaprm/`: training/evaluation code for dicriminative variants, i.e., dORM/dPRM (mostly adapted from [VersaPRM](https://github.com/UW-Madison-Lee-Lab/VersaPRM)).
+- `multigenprm/`: training/evaluation code for generative variants, i.e., gORM/gPRM.
