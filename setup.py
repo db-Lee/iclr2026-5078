@@ -1,0 +1,39 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="multigenprm",
+    version="0.1",
+    packages=find_packages(),
+    entry_points={
+        "console_scripts": [
+            "reformat_data=multigenprm.data.reformat_data:main",
+            "generate_data=multigenprm.data.generate_data:main",
+            "generate_data_single=multigenprm.data.generate_data_single:main",
+            "generate_partial_data=multigenprm.data.generate_partial_data:main",      
+            "preprocess_data=multigenprm.data.preprocess_data:main",
+            "preprocess_noisy_data=multigenprm.data.preprocess_noisy_data:main",
+            "preprocess_noisy_data_wo_think=multigenprm.data.preprocess_noisy_data_wo_think:main",
+            "merge_data=multigenprm.data.merge_data:main",
+            "shorten_critique=multigenprm.data.shorten_critique:main",
+            "inference=multigenprm.inference:main",
+            "inference_math=multigenprm.inference_math:main",
+            "inference_processbench=multigenprm.inference_processbench:main",
+            "inference_processbench_shuffle=multigenprm.inference_processbench_shuffle:main",
+            "inference_processbench_wo_think=multigenprm.inference_processbench_wo_think:main",
+            "merge_lora=multigenprm.utils:main",
+            "evaluate=multigenprm.evaluation.evaluate:main",
+            "evaluate_all=multigenprm.evaluation.evaluate_all:main",
+            "evaluate_all_array=multigenprm.evaluation.evaluate_all_array:main",
+            "evaluate_all_array_math=multigenprm.evaluation.evaluate_all_array_math:main",
+            "evaluate_outcome=multigenprm.evaluation.evaluate_outcome:main",
+            "evaluate_processbench=multigenprm.evaluation.evaluate_processbench:main",
+            "evaluate_processbench_by_bin=multigenprm.evaluation.evaluate_processbench_by_bin:main",
+            "evaluate_processbench_condition=multigenprm.evaluation.evaluate_processbench_condition:main",
+            "compare_negative=multigenprm.analysis.compare_negative:main",
+            "compare_performance=multigenprm.analysis.compare_performance:main",
+            "compare_outcome_performance=multigenprm.analysis.compare_outcome_performance:main",
+            "critique_length_analysis=multigenprm.analysis.critique_length_analysis:main",
+            "data_analysis=multigenprm.analysis.data_analysis:main"
+        ]
+    }
+)

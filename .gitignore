@@ -1,0 +1,33 @@
+# Ignore Python cache
+multigenprm.egg-info
+multigenprm/__pycache__/
+multigenprm/data/__pycache__/
+multigenprm/analysis/__pycache__/
+multigenprm/trainer/__pycache__/
+multigenprm/evaluation/__pycache__/
+versaprm/__pycache__
+
+# Ignore environment files
+wandb/
+
+# Ignore slurm
+slurm*
+
+# Ignore training results
+training_results/
+
+# Ignore evaluation results
+evaluation_results/
+
+# Ignore datasets
+local_datasets/
+
+# Ignore jobs
+jobs/
+
+# Ignore amltignore
+.amltignore
+
+visualization/
+
+model_cache
